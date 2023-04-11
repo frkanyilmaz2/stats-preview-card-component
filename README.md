@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/frkanyilmaz2/stats-preview-card-component)
+- [Live Site URL](https://frkanyilmaz2.github.io/stats-preview-card-component/)
 
 ## My process
 
@@ -39,7 +39,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-
 
 ### What I learned
 
