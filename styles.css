@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.main-container {
+  background-color: #0a0c1c;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-container {
+  border-radius: 15px;
+  display: flex;
+  width: 70%;
+  max-width: 1440px;
+  min-width: 375px;
+  background-color: #1b1937;
+}
+
+/* IMAGE OVERLAY, I got this from chatgpt :D */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(171, 92, 219, 1);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  mix-blend-mode: multiply;
+}
+.right-row {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.image-header-desktop {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* LEFT ROW */
+
+.left-row {
+  height: auto;
+  padding: 3em 2em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-evenly;
+  font-family: "Inter", sans-serif;
+}
+
+.stats,
+.left-row h1,
+p {
+  width: 80%;
+}
+
+.left-row h1 span {
+  color: #ab5cdb;
+}
+
+.stats {
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats p {
+  display: flex;
+  flex-direction: column;
+}
+
+.tag {
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 800px) {
+  .top-container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  .left-row,
+  .right-row {
+    width: 100%;
+  }
+
+  .left-row,
+  .stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .left-row h1,
+  p,
+  .stats p,
+  span {
+    margin: 0.75em 0;
+  }
+  .left-row h1 {
+    font-size: 24px;
+  }
+
+  .left-row p {
+    font-size: 14px;
+  }
+
+  .image-header-desktop,
+  .overlay {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 0;
+  }
+}
